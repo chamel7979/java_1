@@ -1,22 +1,18 @@
 
 public class WhyMethod {
-	
-	public static void printTwoTimesA() {
-		System.out.println("-");
-		System.out.println("A");
-		System.out.println("A");
-		
-	}
 
 	public static void main(String[] args) {
 		//100000
-		printTwoTimesA();
+		printTwoTimes("a","-");
 		//100000
-		printTwoTimesA();	
+		printTwoTimes("a","-");	
+		printTwoTimes("b","-");	
+	}
+	public static void printTwoTimes(String text,String delemiter) {
 		
-		System.out.println("-");
-		System.out.println("A");
-		System.out.println("A");
+		System.out.println(delemiter);
+		System.out.println(text);
+		System.out.println(text);
 	}
 
 }
